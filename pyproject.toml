@@ -3,7 +3,7 @@ requires = ["setuptools>=61.0", "wheel"]
 build-backend = "setuptools.build_meta"
 
 [project]
-name = "lidlconnect"
+name = "LidlConnect.py"
 version = "0.1.0"
 description = "Python API client for Lidl Connect"
 readme = "README.md"
@@ -17,4 +17,4 @@ dependencies = [
 ]
 
 [project.urls]
-Homepage = "https://github.com/MarcUs7i/LidlConnect"
+Homepage = "https://github.com/MarcUs7i/LidlConnect.py"

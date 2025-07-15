@@ -44,6 +44,20 @@ class UserDataMixin:
             return self._get_user_data().get("name")
         except Exception:
             return None
+        
+    @property
+    def phone_number(self) -> Optional[str]:
+        """Get user's phonenumber."""
+        try:
+            data = self._get_user_data()
+            if data and "accounts" in data and data["accounts"]:
+                account = data["accounts"][0]
+                if "endpoints" in account and account["endpoints"]:
+                    endpoint = account["endpoints"][0]
+                    return endpoint.get("name") # Phone number
+            return None
+        except Exception:
+            return None
     
     @property
     def user_type(self) -> Optional[str]:

@@ -30,5 +30,6 @@ def ttl_cache(ttl_seconds=30):
             cache[key] = (result, now)
             return result
         
+        wrapper.cache = cache
         return wrapper
     return decorator

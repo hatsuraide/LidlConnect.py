@@ -11,8 +11,9 @@ from .api.utils import ApiMixin
 from .api.user import UserDataMixin
 from .api.tariffs import TariffsMixin
 from .api.invoices import InvoicesMixin
+from .api.credit import CreditMixin
 
-class LidlConnect(AuthMixin, ExtractorMixin, UsageMixin, ApiMixin, UserDataMixin, TariffsMixin, InvoicesMixin):
+class LidlConnect(AuthMixin, ExtractorMixin, UsageMixin, ApiMixin, UserDataMixin, TariffsMixin, InvoicesMixin, CreditMixin):
     """Client for interacting with Lidl Connect Self-Care portal."""
     
     DASHBOARD_URL = "https://selfcare.lidl-connect.at/customer/dashboard/"

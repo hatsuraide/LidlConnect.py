@@ -256,6 +256,18 @@ Get user's name.
 print(f"User name: {client.user_name}")
 ```
 
+### phone_number → Optional[str]
+
+Get user's phone number.
+
+**Returns:**
+- `str`: User's phone number or None if not available
+
+**Example:**
+```python
+print(f"Phone number: {client.phone_number}")
+```
+
 ### user_type → Optional[str]
 
 Get user's type (e.g., 'CUSTOMER').
@@ -504,6 +516,7 @@ Key caching parameters:
 - Tariffs: 60 seconds TTL
 
 The cache is implemented using the `ttl_cache` decorator in helpers.py.
+The user data cache is cleared automatically when a credit top-up occurs.
 
 ## Error Handling
 

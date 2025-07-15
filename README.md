@@ -51,6 +51,7 @@ print(f"EU Data: {eu_data_info['remaining']}/{eu_data_info['total']} GiB")
 
 # Access account information
 print(f"User: {client.user_name}")
+print(f"Phone Number: {client.phone_number}")
 print(f"Balance: €{client.balance if client.balance is not None else 'N/A'}")
 print(f"Package valid until: {client.tariff_package_valid_to}")
 

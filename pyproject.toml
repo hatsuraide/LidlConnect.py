@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "LidlConnect.py"
-version = "0.1.1"
+version = "0.1.2"
 description = "Python API client for Lidl Connect"
 readme = "README.md"
 license = { file = "LICENSE" }

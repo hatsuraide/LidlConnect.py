@@ -4,17 +4,21 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "LidlConnect.py"
-version = "0.1.2"
+version = "0.2.0"
 description = "Python API client for Lidl Connect"
 readme = "README.md"
 license = { file = "LICENSE" }
 authors = [
   { name = "Hatsura", email = "info@hatsura.dev" }
 ]
+requires-python = ">=3.10"
 dependencies = [
-  "bs4",
-  "requests"
+  "requests",
+  "beautifulsoup4",
 ]
 
 [project.urls]
 Homepage = "https://github.com/hatsuraide/LidlConnect.py"
+
+[tool.setuptools.packages.find]
+where = ["src"]
